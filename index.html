@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Iñaki Sarazola - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Iñaki Sarazola
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          iniaki.sara@gmail.com
+          </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +(598) 99221380
+
+        </div>
+        </div>
+
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#Projects">Projects</a>
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://media.licdn.com/dms/image/v2/D4D03AQGwpR07cswaqg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1725287268784?e=1730937600&v=beta&t=128tSSkU2rr_0m7W0DEhjbwUorxqMbsA_0lp_MrUv_0" class="profile_image" alt="Avatar">
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Iñaki Sarazola! <img src="html_finalprojimages/waving-hand.png" width="60px"/>
+          </h1>
+          <p>
+            I am a responsible and dedicated individual who is passionate about learning and developing my skills to the fullest potential. 
+            I can master abilities really quickly with little to non supervision and have no problem giving extra time to capacitate myself towards being part of a professional team. 
+            My outgoing personality allows me to build confidence, seek feedback, and continuously improve.
+            I am industrial Mechanical engineer (GPA of 3.0/4.0., Top 10 student in 700+ generation)
+            My professional experience resides primarily in the research industry where I developed my programming passion. 
+            Recently I have decided to fully transition towards software development and have been studying towards this goal : IBM Full Stack Software Developer Professional Certificate, Machine Learning From Standford University.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/Python-Symbol.png"/>
+          <h6>Python</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/HTML-CSS-JS.png"/>
+          <h6>HTML, CSS, JavaScript</h6>
+          <p>1 years experience</p>
+        </div>
+        
+        <div class="skill">
+            <img src="https://i0.wp.com/learn.onemonth.com/wp-content/uploads/2019/07/image2-1.png?fit=600%2C315&ssl=1"/>
+            <h6>SQL</h6>
+            <p>2 years experience</p>
+        </div>
+        <div class="skill">
+            <img src="html_finalprojimages/windows_linux.png"/>
+            <h6>Proficient in</h6>
+            <p>Windows or Linux</p>
+          </div>
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Benchmarking of irradiaton models for Uruguay</h3>
+            <ul>
+              <li>Leaded a project based on the comparison and performance assesment of the best irradiation models available to the date on the uruguayan surface</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Forecast</h3>
+            <ul>
+              <li>Took on a long term forecast project for the leading energy company in uruguay (UTE) to asses the behavioral parameters of the key energy influencing variables. (WRF 4.0) </li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Iñaki is a very quick learner and quickly grasps key concepts of Web development.
+          He's got a great attitude and is an excellent team player. 
+          He is keen on learneing and growing, has a curious mind and asks the right question. 
+          Proactive and hands-on, he takes initiative within a team and has potentials to lead the team.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Iñaki has been an awesome experience. 
+          Not only he loves sharing his personal experience, but also is seeking for feedback to make sure everything is right. 
+          For any future projects that need his expertise I would definitely want to work with him again.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I had worked along with Iñaki during the initial phase of our venture which needed Web development. 
+          Unluckily I didn't have the opportunity to share a long journey with him, but from what I got the opportunity to experience he makes the best out of any working environment.
+          He is versatile and will be an asset for any organisation! 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>       
+    </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>You have succesfully uploaded a recommendation! Iñaki thanks for your time!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
